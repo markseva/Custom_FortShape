@@ -49,9 +49,9 @@ public class Board extends JPanel implements ActionListener {
             //Paint the Menu
             g.setColor(Color.LIGHT_GRAY);
             g.setFont(new Font("Comic Sans", Font.PLAIN, 32));
-            printSimpleString("Shapey Shapes", getWidth(), 0, (getHeight()/2)-padding, g);
+            printSimpleString("FortShape", getWidth(), 0, (getHeight()/2)-padding, g);
             g.setFont(new Font("Comic Sans", Font.ITALIC, 20));
-            printSimpleString("Click to Play", getWidth(), 0, (getHeight()/2)+padding, g);
+            printSimpleString("Click to eventually lose", getWidth(), 0, (getHeight()/2)+padding, g);
         }
 
         if (STATS.isPLAY()){
@@ -61,13 +61,13 @@ public class Board extends JPanel implements ActionListener {
         if (STATS.isWIN()){
             g.setColor(Color.LIGHT_GRAY);
             g.setFont(new Font("Comic Sans", Font.PLAIN, 20));
-            printSimpleString("You have passed the vibe check.", getWidth(), 0, (getHeight()/2)-padding, g);
+            printSimpleString("Oh wow you won, and my game didn't die.", getWidth(), 0, (getHeight()/2)-padding, g);
         }
 
         if (STATS.isFAIL()){
             g.setColor(Color.LIGHT_GRAY);
             g.setFont(new Font("Comic Sans", Font.PLAIN, 20));
-            printSimpleString("You have failed the vibe check.", getWidth(), 0, (getHeight()/2)-padding, g);
+            printSimpleString("okay that makes sense. Git Gud.", getWidth(), 0, (getHeight()/2)-padding, g);
         }
     }
 

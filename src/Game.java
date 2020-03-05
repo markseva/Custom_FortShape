@@ -13,7 +13,7 @@ public class Game extends JFrame{
     boolean mouseClicked = false;
 
     public Game(){
-        setTitle("SHAPEY SHAPES");
+        setTitle("FortShape.exe");
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
